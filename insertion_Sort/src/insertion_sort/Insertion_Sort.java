@@ -60,6 +60,7 @@ public class Insertion_Sort {
             for (i = j - 1; (i >= 0) && (num[ i] < key); i--) // Smaller values are moving up
             {
                 num[ i + 1] = num[ i];
+                comparation++; 
                 swap++;
             }
             num[ i + 1] = key;    // Put the key in its proper location
